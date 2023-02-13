@@ -8,7 +8,7 @@ var withLowercase = "abcdefghijklmnopqrstuvwxyz";
 // declared global variables for character sets
 function generatePassword() {
   var length = prompt(
-    "How many characters would you like your password to be? (minimum: 8, maximum: 128"
+    "How many characters would you like your password to be? (minimum: 8, maximum: 128)"
   )
   {
     if (length === null) {
