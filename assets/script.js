@@ -31,7 +31,7 @@ function generatePassword() {
   var numbers = confirm(
     "Would you like numbers in your password? (OK = Yes, Cancel = No)"
   );
-
+// kept to binary values for ease of use
   if (
     upcase === true &&
     lowcase === true &&
@@ -227,7 +227,7 @@ function generatePassword() {
     return;
 }
 }
-// used if function with a for loop to generate password, put all combinations that can be achieved through the prompts and the charsets that should be used, then used the concat feature to create a unique charset for each condition which will return the randomized password using the new charset variable and selecting random indices using .charAt and with mathrandom multipled by the charset length
+// used a loop to generate password, put all combinations that can be achieved through the prompts and the charsets that should be used, then used the concat feature to create a unique charset for each condition which will return the randomized password using the new charset variable and selecting random indices using .charAt and with mathrandom multipled by the charset length
 
 // Write password to the #password input
 function writePassword() {
