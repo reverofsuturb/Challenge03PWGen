@@ -9,13 +9,13 @@ var withLowercase = "abcdefghijklmnopqrstuvwxyz";
 function generatePassword() {
   var length = prompt(
     "How many characters would you like your password to be? (minimum: 8, maximum: 128)"
-  )
+  );
   {
     if (length === null) {
       return;
     } else
-      while ((length < 8 || length > 128) || isNaN(length))  {
-        length = prompt("Please enter a number between 8 - 128") 
+      while (length < 8 || length > 128 || isNaN(length)) {
+        length = prompt("Please enter a number between 8 - 128");
       }
   }
   // while loop for # validation
@@ -31,7 +31,7 @@ function generatePassword() {
   var numbers = confirm(
     "Would you like numbers in your password? (OK = Yes, Cancel = No)"
   );
-// kept to binary values for ease of use
+  // kept to binary values for ease of use
   if (
     upcase === true &&
     lowcase === true &&
@@ -216,8 +216,7 @@ function generatePassword() {
       passcode += charset.charAt(Math.floor(Math.random() * charset.length));
     }
     return passcode;
-  }
-  else if (
+  } else if (
     upcase === false &&
     lowcase === false &&
     symbols === false &&
@@ -225,7 +224,7 @@ function generatePassword() {
   ) {
     alert("You didn't select any options! Please try again");
     return;
-}
+  }
 }
 // used a loop to generate password, put all combinations that can be achieved through the prompts and the charsets that should be used, then used the concat feature to create a unique charset for each condition which will return the randomized password using the new charset variable and selecting random indices using .charAt and with mathrandom multipled by the charset length
 
