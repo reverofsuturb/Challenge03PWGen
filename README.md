@@ -1,7 +1,7 @@
 # Challenge03PWGen
 ## Description
 
-This is a project where started code was supplied and we were to write a function to generate a random password. The generator itself presents a series of prompts which ask the user which criteria they would like to use when generating. These include a length of minimum 8 characters to maximum 128 characters, the use of uppercase letters, lowercase letters, or both, the use of symbols, and the use of numbers. 
+This is a project where started code was supplied and we were to write a function to generate a random password. The generator itself presents a series of prompts which ask the user which criteria they would like to use when generating. These criteria include a length of minimum 8 characters to maximum 128 characters, the use of uppercase letters, lowercase letters, or both, the use of symbols, and the use of numbers. 
 
 ## Installation
 
